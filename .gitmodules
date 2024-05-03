@@ -1,0 +1,6 @@
+[submodule "TemplateWebApi"]
+	path = TemplateWebApi
+	url = https://github.com/pinaplehits/TemplateWebApi
+[submodule "TemplateViteVue"]
+	path = TemplateViteVue
+	url = https://github.com/pinaplehits/TemplateViteVue
