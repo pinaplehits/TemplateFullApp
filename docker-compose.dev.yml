@@ -1,17 +1,19 @@
 version: '3.8'
 services:
-  build-frontend-prod:
+  build-frontend-dev:
     container_name: Frontend
     build:
       context: TemplateViteVue/
       dockerfile: Dockerfile
     ports:
-      - 80:80
-  build-backend-prod:
+      - 81:80
+  build-backend-dev:
     container_name: Backend
     build:
       context: TemplateWebApi/
       dockerfile: TemplateWebApi/Dockerfile
     ports:
-      - 90:8080
-      - 91:8081
+      - 92:8080
+      - 93:8081
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
